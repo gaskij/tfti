@@ -1,55 +1,52 @@
 import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { Box, Grid, Paper } from '@material-ui/core';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import { Box, Grid, Typography } from '@material-ui/core';
 
-const useStyles = makeStyles((theme: Theme) =>
+import DashboardCard from './DashboardCard';
+
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexGrow: 1,
     },
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-    },
   }),
 );
 
-const Header = () => {
+const Dashboard = () => {
   const classes = useStyles();
 
   return (
-    <Box m={2}>
-      <Grid
-        container
-        className={classes.root}
-        spacing={2}
-        direction="row"
-        justify="center"
-        alignItems="stretch"
-      >
-        <Grid item>
-          <Paper className={classes.paper}>xs=12</Paper>
-        </Grid>
-        <Grid item>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
-        </Grid>
+    <Box mx={3} my={2} className={classes.root} display="flex" flexDirection="column">
+      <Typography variant="h6">Welcome, &lt;User&gt;!</Typography>
+      <Box my={2} display="flex" flex="1">
         <Grid
-          item
-          direction="column"
+          container
+          className={classes.root}
+          spacing={2}
+          direction="row"
           justify="center"
-          alignItems="center"
+          alignItems="stretch"
         >
-          <Grid item>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
-          </Grid>
-          <Grid item>
-            <Paper className={classes.paper}>xs=12 sm=6</Paper>
+          <DashboardCard size={4} title="Friend List" />
+          <DashboardCard size={4} title="Upcoming Events" />
+          <Grid
+            container
+            item
+            xs={4}
+            spacing={2}
+            direction="row"
+            justify="center"
+            alignItems="stretch"
+            // alignContent="stretch"
+            // wrap="nowrap"
+          >
+            <DashboardCard title="Event Invites" />
+            <DashboardCard title="Event History" />
           </Grid>
         </Grid>
-      </Grid>
+      </Box>
     </Box>
   );
 }
 
-export default Header;
+export default Dashboard;
