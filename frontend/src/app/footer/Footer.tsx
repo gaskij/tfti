@@ -1,27 +1,31 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { 
-  AppBar,
-  Toolbar,
-} from '@material-ui/core';
+import { Box, Paper } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    appBar: {
+    footerBox: {
       top: 'auto',
       bottom: 0,
+      width: '100%',
+    },
+    footerPaper: {
+      padding: theme.spacing(2),
+      backgroundColor: theme.palette.primary.main,
+      width: '100%',
     },
   }),
 );
 
-const Header = () => {
+const Footer = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" color="primary" className={classes.appBar}>
-      <Toolbar variant="dense" />
-    </AppBar>
+    <Box className={classes.footerBox} position="fixed" >
+      <Paper className={classes.footerPaper} />
+    </Box>
+    
   );
 }
 
-export default Header;
+export default Footer;
