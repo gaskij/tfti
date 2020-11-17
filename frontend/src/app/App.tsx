@@ -3,9 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';  
 
 import theme from '../theme';
-import Header from './header';
-import Footer from './footer';
-import Dashboard from '../dashboard';
+import Header from './header/Header';
+import Footer from './footer/Footer';
+import Dashboard from '../dashboard/Dashboard';
 import './App.css';
 
 function App() {
