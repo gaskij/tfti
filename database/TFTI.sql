@@ -38,7 +38,7 @@ CREATE TABLE "event_invites" (
   "event_id" int,
   "event_invite_id" SERIAL PRIMARY KEY,
   "accepted" boolean,
-  "invitee_id" int,
+  "recipient_id" int,
   "sender_id" int,
   "invite_time" timestamp
 );
