@@ -1,0 +1,9 @@
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\bin\Debug\netstandard2.0\Kalandear.Interfaces.deps.json
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\bin\Debug\netstandard2.0\Kalandear.Interfaces.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\bin\Debug\netstandard2.0\Kalandear.Interfaces.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Interfaces\obj\Debug\netstandard2.0\Kalandear.Interfaces.csprojAssemblyReference.cache

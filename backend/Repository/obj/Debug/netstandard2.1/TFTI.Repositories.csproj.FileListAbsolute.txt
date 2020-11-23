@@ -1,0 +1,16 @@
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.csprojAssemblyReference.cache
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.AssemblyInfoInputs.cache
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.AssemblyInfo.cs
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Repositories.deps.json
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Repositories.dll
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Repositories.pdb
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Contracts.dll
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Data.dll
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Interfaces.dll
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Interfaces.pdb
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Data.pdb
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\bin\Debug\netstandard2.1\TFTI.Contracts.pdb
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.csproj.CopyComplete
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.dll
+C:\Users\kris\source\repos\tfti\backend\TFTI\Repository\obj\Debug\netstandard2.1\TFTI.Repositories.pdb

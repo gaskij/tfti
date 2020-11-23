@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\TFTI.Contracts.csproj" />
+    <ProjectReference Include="..\Interfaces\TFTI.Interfaces.csproj" />
+    <ProjectReference Include="..\Kalandear.Data\TFTI.Data.csproj" />
+    <ProjectReference Include="..\Repository\TFTI.Repositories.csproj" />
+  </ItemGroup>
+
+
+</Project>
