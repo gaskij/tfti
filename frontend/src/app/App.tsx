@@ -4,7 +4,6 @@ import { ThemeProvider } from '@material-ui/core';
 
 import theme from '../theme';
 import Header from './header/Header';
-import Footer from './footer/Footer';
 import Dashboard from '../dashboard/Dashboard';
 import './App.css';
 
@@ -25,9 +24,6 @@ function App() {
             </Route>
           </Switch>
         </main>
-        <footer>
-          <Footer />
-        </footer>
       </BrowserRouter>
     </ThemeProvider>
   );

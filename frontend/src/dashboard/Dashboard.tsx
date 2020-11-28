@@ -2,12 +2,15 @@ import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Box, Grid, Typography } from '@material-ui/core';
 
+import theme from '../theme';
 import DashboardCard from './DashboardCard';
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      flexGrow: 1,
+      flex: 1,
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(2),
     },
   }),
 );
@@ -18,7 +21,6 @@ const Dashboard = () => {
   return (
     <Box mx={3} my={2} className={classes.root} display="flex" flexDirection="column">
       <Typography variant="h6">Welcome, &lt;User&gt;!</Typography>
-      <Box my={2} display="flex" flex="1">
         <Grid
           container
           className={classes.root}
@@ -29,22 +31,19 @@ const Dashboard = () => {
         >
           <DashboardCard size={4} title="Friend List" />
           <DashboardCard size={4} title="Upcoming Events" />
-          <Grid
-            container
-            item
-            xs={4}
-            spacing={2}
-            direction="row"
-            justify="center"
-            alignItems="stretch"
-            // alignContent="stretch"
-            // wrap="nowrap"
-          >
-            <DashboardCard title="Event Invites" />
-            <DashboardCard title="Event History" />
+          <Grid item xs={4}>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="stretch"
+              style={{height: '100%'}}
+            >
+              <DashboardCard style={{height: "98%", marginBottom: theme.spacing(1)}} title="Event Invites" />
+              <DashboardCard style={{height: "98%", marginTop: theme.spacing(1)}} title="Event History" />
+            </Grid>
           </Grid>
         </Grid>
-      </Box>
     </Box>
   );
 }
