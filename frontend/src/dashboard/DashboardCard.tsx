@@ -22,7 +22,7 @@ const DashboardCard = ({ title, size, style, children }: PropsWithChildren<Props
 
   return (
     <Grid item xs={size || 12} className="gridItem">
-      <Paper className={classes.paper} elevation={2} style={style}>
+      <Paper className={classes.paper} elevation={8} style={style}>
         <Box p={2}>
           <Box mb={1}>
             <Typography variant="h6">{title}</Typography>

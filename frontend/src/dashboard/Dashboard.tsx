@@ -4,6 +4,9 @@ import { Box, Grid, Typography } from '@material-ui/core';
 
 import theme from '../theme';
 import DashboardCard from './DashboardCard';
+import {
+  EventInvites,
+} from './panels'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -39,7 +42,9 @@ const Dashboard = () => {
               alignItems="stretch"
               style={{height: '100%'}}
             >
-              <DashboardCard style={{height: "98%", marginBottom: theme.spacing(1)}} title="Event Invites" />
+              <DashboardCard style={{height: "98%", marginBottom: theme.spacing(1)}} title="Event Invites">
+                <EventInvites />
+              </DashboardCard>
               <DashboardCard style={{height: "98%", marginTop: theme.spacing(1)}} title="Event History" />
             </Grid>
           </Grid>

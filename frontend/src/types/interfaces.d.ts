@@ -36,8 +36,8 @@ export interface EventAttendee {
 export interface EventInvite {
   event_id: number; 
   event_invite_id: number;  
-  accepted: boolean;
-  invitee_id: number;
+  accepted: boolean | null;
+  recipient_id: number;
   sender_id: number;
   invite_time: Date;
 }
