@@ -35,7 +35,7 @@ const EventInvites = () => {
               ? <Typography variant="body1">There was an error: {JSON.stringify(error)}</Typography>
               : <>
                   {mockInvites.map((invite) => (
-                    <Paper elevation={2}>
+                    <Paper elevation={2} key={invite.event_invite_id}>
                       <Box p={1}>
                         <Typography variant="body1">Invite ID: {invite.event_invite_id}</Typography>
                         <Typography variant="body1">Sender ID: {invite.sender_id}</Typography>

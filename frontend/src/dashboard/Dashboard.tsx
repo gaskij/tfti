@@ -6,6 +6,7 @@ import theme from '../theme';
 import DashboardCard from './DashboardCard';
 import {
   EventInvites,
+  FriendsList
 } from './panels'
 
 const useStyles = makeStyles((theme) =>
@@ -32,7 +33,9 @@ const Dashboard = () => {
           justify="center"
           alignItems="stretch"
         >
-          <DashboardCard size={4} title="Friend List" />
+          <DashboardCard size={4} title="Friend List">
+            <FriendsList />
+          </DashboardCard>
           <DashboardCard size={4} title="Upcoming Events" />
           <Grid item xs={4}>
             <Grid
