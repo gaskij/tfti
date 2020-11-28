@@ -21,6 +21,7 @@ CREATE TABLE "blocked" (
 
 CREATE TABLE "events" (
   "event_id" SERIAL PRIMARY KEY,
+  "event_name" varchar,
   "host_id" int,
   "location" varchar,
   "event_date" timestamp,
