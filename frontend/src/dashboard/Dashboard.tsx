@@ -6,7 +6,8 @@ import theme from '../theme';
 import DashboardCard from './DashboardCard';
 import {
   EventInvites,
-  FriendsList
+  FriendsList,
+  UpcomingEvents
 } from './panels'
 
 const useStyles = makeStyles((theme) =>
@@ -36,7 +37,9 @@ const Dashboard = () => {
           <DashboardCard size={4} title="Friend List">
             <FriendsList />
           </DashboardCard>
-          <DashboardCard size={4} title="Upcoming Events" />
+          <DashboardCard size={4} title="Upcoming Events">
+            <UpcomingEvents />
+          </DashboardCard>
           <Grid item xs={4}>
             <Grid
               container
