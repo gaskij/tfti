@@ -10,7 +10,7 @@ namespace TFTI.Interfaces
         /// </summary>
         /// <param name="host"></param>
         /// <returns></returns>
-        Task<User> CreateUser(User host);
+        Task<int> CreateUser(NewUser host);
 
         /// <summary>
         ///     Retrieve a host user with the specified id.

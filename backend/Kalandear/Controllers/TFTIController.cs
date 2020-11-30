@@ -25,11 +25,11 @@ namespace Kalandear.API.Controllers
         /// </returns>
         [Route("host")]
         [HttpPost]
-        public async Task<int> CreateHost([FromBody] User user)
+        public async Task<int> CreateHost([FromBody] NewUser user)
         {
-            User userResponse = _HostRepository.CreateUser(user).Result;
+            int userResponse = _HostRepository.CreateUser(user).Result;
 
-            return userResponse.Id;
+            return userResponse;
         }
 
         //[Route("event")]

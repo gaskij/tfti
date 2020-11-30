@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using TFTI.Contracts;
 
 namespace Kalandear.Data
@@ -11,11 +10,10 @@ namespace Kalandear.Data
         /// <summary>
         ///     EF Core Database set to handle hosts.
         /// </summary>
-        public DbSet<User> Hosts { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // TODO: Add configs
         }
     }
 }

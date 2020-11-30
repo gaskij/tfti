@@ -22,15 +22,22 @@ namespace TFTI.Repositories
 
         #region Public Methods
         /// <inheritdoc/>
-        public async Task<User> CreateUser(User newUser)
+        public async Task<int> CreateUser(NewUser newUser)
         {
             User user = new User();
-            user.Name = newUser.Name;
+            user.first_name = newUser.first_name;
+            user.last_name = newUser.last_name;
+            user.email = newUser.email;
+            user.pass_hash = newUser.pass_hash;
+            user.salt = newUser.salt;
+            user.phone_number = newUser.phone_number;
+            user.user_summary = newUser.user_summary;
 
-            _context.Hosts.Add(user);
-            //_context.SaveChanges();
 
-            return user;
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            return user.id;
         }
 
         /// <inheritdoc/>
@@ -39,7 +46,7 @@ namespace TFTI.Repositories
             User hostResponse = new User();
 
             // use Entity framework core to get host by id
-            hostResponse = await _context.Hosts.FindAsync(hostId);
+            hostResponse = await _context.Users.FindAsync(hostId);
 
             return hostResponse;
         }

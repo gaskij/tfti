@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dQD80OFKUqb+b/+8Jq7OZ4pvmgjZeJyDHGIdiE33HWpblzzIPdGZXAlaUhG+DadsRuBd47rYtuZXepKi0lnyDg==",
+  "dgSpecHash": "3AD3hzNXqN79iGpDFls3VTX5Pmwiy3/NSh/mcnFYq/1vO1qI4g4C378VvNmE5TYfGSI4E67zXfQ3AUUTdpPEnA==",
   "success": true,
   "projectFilePath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\APITests\\APITests.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
+    "C:\\Users\\kris\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.diagnostics.diagnosticsource\\4.3.0\\system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",

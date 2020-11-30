@@ -10,3 +10,15 @@ C:\Users\kris\source\repos\tfti\backend\TFTI\Interfaces\bin\Debug\netstandard2.1
 C:\Users\kris\source\repos\tfti\backend\TFTI\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CopyComplete
 C:\Users\kris\source\repos\tfti\backend\TFTI\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.dll
 C:\Users\kris\source\repos\tfti\backend\TFTI\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.deps.json
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.dll
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Contracts.dll
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Contracts.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csprojAssemblyReference.cache
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CopyComplete
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.dll
+D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.pdb

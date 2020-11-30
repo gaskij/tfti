@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using TFTI.Interfaces;
 using TFTI.Repositories;
+using TFTI.API;
 
 namespace TFTI
 {
@@ -110,7 +111,7 @@ namespace TFTI
         protected virtual void InjectConnection(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<TFTIContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("KalandearConnex")));
+            services.AddDbContext<TFTIContext>(opt => opt.UseNpgsql(ConnectionString.Get()));
         }
     }
 }

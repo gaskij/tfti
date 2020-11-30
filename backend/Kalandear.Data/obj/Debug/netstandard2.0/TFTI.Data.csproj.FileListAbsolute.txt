@@ -10,3 +10,15 @@ C:\Users\kris\source\repos\tfti\backend\TFTI\Kalandear.Data\bin\Debug\netstandar
 C:\Users\kris\source\repos\tfti\backend\TFTI\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.csproj.CopyComplete
 C:\Users\kris\source\repos\tfti\backend\TFTI\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.dll
 C:\Users\kris\source\repos\tfti\backend\TFTI\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\bin\Debug\netstandard2.0\TFTI.Data.deps.json
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\bin\Debug\netstandard2.0\TFTI.Data.dll
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\bin\Debug\netstandard2.0\TFTI.Data.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\bin\Debug\netstandard2.0\TFTI.Contracts.dll
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\bin\Debug\netstandard2.0\TFTI.Contracts.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.csprojAssemblyReference.cache
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.csproj.CopyComplete
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.dll
+D:\Users\kris\Source\Repos\tfti\backend\Kalandear.Data\obj\Debug\netstandard2.0\TFTI.Data.pdb
