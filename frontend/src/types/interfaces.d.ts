@@ -20,6 +20,7 @@ export interface Blocked {
 
 export interface Event {
   event_id: number; 
+  event_title: string;
   host_id: number;
   location: string;
   event_date: Date;
