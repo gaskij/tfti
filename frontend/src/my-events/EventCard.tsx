@@ -3,6 +3,8 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Box, Grid, Paper, Typography, IconButton } from '@material-ui/core';
 import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
 
+import { Event } from '../types/interfaces';
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     guest: {
@@ -35,28 +37,23 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 interface Props {
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  host: string;
-  details: string;
-  isHost: boolean;
+  e: Event;
   size?: boolean | "auto" | 2 | 1 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | undefined;
 }
 interface Props2 {
   type: string;
-  content: string;
+  content: any;
 }
 
-const EventCard = ({ title, date, time, location, host, details, size, isHost, children }: PropsWithChildren<Props>) => {
+const EventCard = ({ e, size, children }: PropsWithChildren<Props>) => {
   const classes = useStyles();
+  const isHost = e.host_id == 3;
 
   return (
     <Grid item xs={size || 5}>
       <Paper className={`${isHost ? classes.host : classes.guest}`} elevation={2}>
         <Box mb={1}>
-          <Typography variant="h5" className={classes.title}>{title} 
+          <Typography variant="h5" className={classes.title}>{e.event_title} 
             <IconButton aria-label="edit event" color="inherit">
               <CreateOutlinedIcon className={`${isHost ? '' : classes.hidden}`} />
             </IconButton>
@@ -69,13 +66,13 @@ const EventCard = ({ title, date, time, location, host, details, size, isHost, c
           flex-flow="wrap"
           alignContent="flex-start"
           >
-            <EventData type='Date' content={date} />
-            <EventData type='Time' content={time} />
-            <EventData type='Location' content={location} />
-            <EventData type='Host' content={host} />
+            <EventData type='Date' content={e.event_date.getDate()} />
+            <EventData type='Time' content={e.event_date.getHours()} />
+            <EventData type='Location' content={e.location} />
+            <EventData type='Host' content={e.host_id} />
           </Grid>
           <Typography variant="body1" className={classes.bolded}>Details:</Typography>
-          <Typography variant="body1">{details}</Typography>
+          <Typography variant="body1">{e.event_summary}</Typography>
         </Box>
         {children}
       </Paper>
