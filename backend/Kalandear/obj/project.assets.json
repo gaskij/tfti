@@ -1705,6 +1705,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Npgsql": "5.0.0",
           "TFTI.Data": "1.0.0",
           "TFTI.Interfaces": "1.0.0"
         },

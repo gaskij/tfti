@@ -1,16 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using TFTI.Contracts;
 using TFTI.Interfaces;
 
 namespace Kalandear.API.Controllers
 {
-    [Route("tfti/")]
+    [Route("tfti")]
     [ApiController]
     public class TFTIController : ControllerBase
     {
-        private readonly IHostRepository _HostRepository;
-        public TFTIController(IHostRepository hostRepository)
+        private readonly ITFTIRepository _HostRepository;
+        public TFTIController(ITFTIRepository hostRepository)
         {
             _HostRepository = hostRepository;
         }
@@ -23,8 +24,10 @@ namespace Kalandear.API.Controllers
         /// </param>
         /// <returns>
         /// </returns>
-        [Route("host")]
+        [Route("users")]
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<int> CreateHost([FromBody] NewUser user)
         {
             int userResponse = _HostRepository.CreateUser(user).Result;

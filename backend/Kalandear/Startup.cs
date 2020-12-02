@@ -10,6 +10,7 @@ using Microsoft.OpenApi.Models;
 using TFTI.Interfaces;
 using TFTI.Repositories;
 using TFTI.API;
+using System.Collections.Generic;
 
 namespace TFTI
 {
@@ -62,6 +63,8 @@ namespace TFTI
             InjectRepository(services);
 
             InjectConnection(services);
+
+            InjectConnectionResolver(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -85,6 +88,14 @@ namespace TFTI
 
             app.UseSwagger(c => {
                 c.SerializeAsV2 = true;
+                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => 
+                    { 
+                        swaggerDoc.Servers = new List<OpenApiServer> { 
+                            new OpenApiServer { 
+                                Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/tfti/v1"
+                            } 
+                        };
+                    });
             });
 
             app.UseSwaggerUI(c =>
@@ -101,7 +112,7 @@ namespace TFTI
         {
             //Contract.CheckIsNotNull(nameof(services), services);
 
-            services.AddTransient<IHostRepository, HostRepository>();
+            services.AddTransient<ITFTIRepository, TFTIRepository>();
         }
 
         /// <summary>
@@ -112,6 +123,11 @@ namespace TFTI
         {
             services.AddControllers();
             services.AddDbContext<TFTIContext>(opt => opt.UseNpgsql(ConnectionString.Get()));
+        }
+
+        protected virtual void InjectConnectionResolver(IServiceCollection services)
+        {
+            services.AddScoped<IConnectionResolver, ConnectionResolver>();
         }
     }
 }

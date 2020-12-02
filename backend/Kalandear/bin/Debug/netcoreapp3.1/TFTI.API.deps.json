@@ -1590,6 +1590,7 @@
       },
       "TFTI.Repositories/1.0.0": {
         "dependencies": {
+          "Npgsql": "5.0.0",
           "TFTI.Data": "1.0.0",
           "TFTI.Interfaces": "1.0.0"
         },

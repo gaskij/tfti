@@ -1,0 +1,26 @@
+﻿using System.Threading.Tasks;
+using TFTI.Contracts;
+
+namespace TFTI.Interfaces
+{
+    public interface ITFTIRepository
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="host"></param>
+        /// <returns></returns>
+        Task<int> CreateUser(NewUser host);
+
+        /// <summary>
+        ///     Retrieve a host user with the specified id.
+        /// </summary>
+        /// <param name="hostId">
+        ///     The unique identifier of a host user.
+        /// </param>
+        /// <returns>
+        ///     A populated <c>Host</c> object.
+        /// </returns>
+        Task<User> GetHost(int hostId);
+    }
+}
