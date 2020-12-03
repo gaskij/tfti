@@ -35,22 +35,72 @@ namespace TFTI.Repositories
             user.phone_number = newUser.phone_number;
             user.user_summary = newUser.user_summary;
 
-
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
             return user.id;
         }
-
-        /// <inheritdoc/>
-        public async Task<User> GetHost(int hostId)
+        
+        /// <inheritdoc />
+        public async Task<int> CreateEvent(NewEvent newEvent)
         {
-            User hostResponse = new User();
+            Event TFTIevent = new Event();
+            TFTIevent.addtional_links = newEvent.addtional_links;
+            TFTIevent.event_date = newEvent.event_date;
+            TFTIevent.event_name = newEvent.event_name;
+            TFTIevent.event_summary = newEvent.event_summary;
+            TFTIevent.host_id = newEvent.host_id;
+            TFTIevent.is_private = newEvent.is_private;
+            TFTIevent.location = newEvent.location;
 
-            // use Entity framework core to get host by id
-            hostResponse = await _context.Users.FindAsync(hostId);
+            _context.Events.Add(TFTIevent);
+            await _context.SaveChangesAsync();
 
-            return hostResponse;
+            return TFTIevent.event_id;
+        }
+
+        /// <inheritdoc />
+        public async Task<EventAttendees> CreateEventAttendees(EventAttendees eventAttendees)
+        {
+            _context.EventAttendees.Add(eventAttendees);
+            await _context.SaveChangesAsync();
+
+            return eventAttendees;
+        }
+
+        public async Task<int> CreateEventInvites(NewEventInvites newEventInvites)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public async Task<int> CreateFriend(Friend friend)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public async Task<int> CreateItem(NewItem newItem)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public async Task<int> CreateMedia(Media media)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public async Task<int> CreateMessage(NewMessage newMessage)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<User> GetUser(int hostId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Message> GetMessage(Message message)
+        {
+            throw new System.NotImplementedException();
         }
         #endregion
 

@@ -28,19 +28,25 @@ namespace Kalandear.API.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<int> CreateHost([FromBody] NewUser user)
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<int> CreateUser([FromBody] NewUser newUser)
         {
-            int userResponse = _HostRepository.CreateUser(user).Result;
+            int userResponse = _HostRepository.CreateUser(newUser).Result;
 
             return userResponse;
         }
 
-        //[Route("event")]
-        //[HttpPost]
-        //public async Task MakeEvent(Event eventDetails)
-        //{
-        //    _HostRepository.MakeEvent();
-        //}
+        [Route("events")]
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<int> CreateEvent(Event eventDetails)
+        {
+            int eventId = _HostRepository.CreateEvent(eventDetails).Result;
+
+            return eventId;
+        }
 
 
         /// <summary>

@@ -92,7 +92,7 @@ namespace TFTI
                     { 
                         swaggerDoc.Servers = new List<OpenApiServer> { 
                             new OpenApiServer { 
-                                Url = $"{httpReq.Scheme}://{httpReq.Host.Value}/tfti/v1"
+                                Url = $"{httpReq.Scheme}://{httpReq.Host.Value}"
                             } 
                         };
                     });
