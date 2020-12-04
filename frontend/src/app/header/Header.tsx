@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { AccountCircle, Mail } from '@material-ui/icons';
+
 import {Link } from "react-router-dom";
+
 import { 
   AppBar,
   Toolbar,
