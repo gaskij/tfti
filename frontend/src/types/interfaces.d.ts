@@ -47,7 +47,7 @@ export interface Item {
   event_id: number;
   item_id: number;  
   item_name: string;
-  user_id: number;
+  user_id: number | null;
   amount: number;
   unit_type: string;
 }

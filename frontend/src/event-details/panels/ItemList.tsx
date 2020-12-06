@@ -13,56 +13,50 @@ import {
   TableBody,
   Typography,
 } from '@material-ui/core';
-import { Check } from '@material-ui/icons';
 import useAxios from 'axios-hooks';
 
-import { User } from '../../types/interfaces'
+import { Item } from '../../types/interfaces'
 
-const mockGuests: User[] = [
+const mockItems: Item[] = [
   {
-    id: 1,
-    first_name: 'Justin',
-    last_name: 'Gaskins',
-    email: '123@abc.com',
-    password: 'uhhhhh',
-    phone_number: '555-555-5555',
-    user_summary: 'Summary',
+    event_id: 1,
+    item_id: 1,  
+    item_name: 'Plates',
+    user_id: null,
+    amount: 20,
+    unit_type: '',
   },
   {
-    id: 2,
-    first_name: 'Aliza',
-    last_name: 'Knight',
-    email: '123@abc.com',
-    password: 'uhhhhh',
-    phone_number: '555-555-5555',
-    user_summary: 'Summary',
+    event_id: 1,
+    item_id: 2,  
+    item_name: 'Cups',
+    user_id: null,
+    amount: 20,
+    unit_type: '',
   },
   {
-    id: 3,
-    first_name: 'Alexis',
-    last_name: 'Joseph',
-    email: '123@abc.com',
-    password: 'uhhhhh',
-    phone_number: '555-555-5555',
-    user_summary: 'Summary',
+    event_id: 1,
+    item_id: 3,  
+    item_name: 'Napkins',
+    user_id: null,
+    amount: 20,
+    unit_type: '',
   },
   {
-    id: 4,
-    first_name: 'Jacob',
-    last_name: 'Jiang',
-    email: '123@abc.com',
-    password: 'uhhhhh',
-    phone_number: '555-555-5555',
-    user_summary: 'Summary',
+    event_id: 1,
+    item_id: 4,  
+    item_name: 'Banner',
+    user_id: null,
+    amount: 1,
+    unit_type: '',
   },
   {
-    id: 5,
-    first_name: 'Kris',
-    last_name: 'Whelan',
-    email: '123@abc.com',
-    password: 'uhhhhh',
-    phone_number: '555-555-5555',
-    user_summary: 'Summary',
+    event_id: 1,
+    item_id: 1,  
+    item_name: 'Balloons',
+    user_id: null,
+    amount: 5,
+    unit_type: '',
   }
 ]
 
@@ -73,14 +67,14 @@ const useStyles = makeStyles({
 });
 
 interface Props {
-  hostId: number;
+  eventId: number;
 }
 
-const GuestList = ({ hostId }: Props): ReactElement => {
+const ItemList = ({ eventId }: Props): ReactElement => {
   const classes = useStyles();
 
-  const [{ data, loading, error }] = useAxios<[User]>({
-    url: `/api/events/id/guests`,
+  const [{ data, loading, error }] = useAxios<[Item]>({
+    url: `/api/events/${eventId}/items`,
   }, { manual: false, useCache: false });
 
   if (loading) return <CircularProgress color="secondary"/>
@@ -90,23 +84,21 @@ const GuestList = ({ hostId }: Props): ReactElement => {
   
   return (
     <Box>
-      <Typography variant="h5">Guest List</Typography>
+      <Typography variant="h5">Item List</Typography>
       <Box py={1} />
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell></TableCell>
-              <TableCell>
-                {mockGuests.filter(guest => guest.id === hostId)[0].first_name} (Host)
-              </TableCell>
+              <TableCell>Item Name</TableCell>
+              <TableCell>Guest</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {mockGuests.filter(guest => guest.id !== hostId).map((guest) => (
-              <TableRow key={guest.id}>
-                <TableCell>{guest.id < 3 && <Check />}</TableCell>
-                <TableCell>{guest.first_name} {guest.last_name}</TableCell>
+            {mockItems.map((item) => (
+              <TableRow key={item.item_id}>
+                <TableCell>{item.item_name} ({item.amount}{item.unit_type})</TableCell>
+                <TableCell>{item.user_id || 'Not taken'}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -116,4 +108,4 @@ const GuestList = ({ hostId }: Props): ReactElement => {
   )
 }
 
-export default GuestList;
+export default ItemList;

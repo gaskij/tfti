@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { AccountCircle, Mail } from '@material-ui/icons';
-
-import {Link } from "react-router-dom";
-
 import { 
   AppBar,
   Toolbar,
@@ -14,6 +11,9 @@ import {
   Button,
   Badge
 } from '@material-ui/core';
+import { Link } from "react-router-dom";
+
+import logo from './logo.svg';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -45,19 +45,16 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            tfti
-          </Typography>
+          <span className={classes.title}>
+            {/* <img src={logo} alt="logo" /> */}
+            <Typography variant="h6">tfti</Typography>
+          </span>
           <div>
-            <Button color="inherit">
-              Browse
-            </Button>
-            <Button color="inherit">
-              Create Event
-            </Button>
-            <Link to="/my-events"><Button color="inherit">
-              My Events
-            </Button></Link>
+            <Button color="inherit">Browse</Button>
+            <Button color="inherit">Create Event</Button>
+            <Link to="/my-events">
+              <Button color="inherit">My Events</Button>
+            </Link>
           </div>
           {auth && (
             <div>
