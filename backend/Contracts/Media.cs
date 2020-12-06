@@ -9,10 +9,11 @@ namespace TFTI.Contracts
     [Table("media")]
     public class Media
     {
+        [Key]
         public int media_id { get; set; }
         [Required]
         public int event_id { get; set; }
-        [Key]
+        
         [Required]
         public int user_id { get; set; }
         public string file_path { get; set; }

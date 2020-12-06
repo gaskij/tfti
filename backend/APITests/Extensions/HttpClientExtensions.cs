@@ -34,6 +34,8 @@ namespace APITests.Extensions
 
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
+            string completeUrl = client.BaseAddress.ToString() + url;
+
             HttpResponseMessage responseMessage = await client.PostAsync(url, content);
 
             return responseMessage.StatusCode;

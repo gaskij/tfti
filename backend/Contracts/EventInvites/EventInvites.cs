@@ -9,6 +9,7 @@ namespace TFTI.Contracts
     [Table("event_invites")]
     public class EventInvites
     {
+        [Key]
         public int event_invite_id { get; set; }
         [Required]
         public int event_id { get; set; }

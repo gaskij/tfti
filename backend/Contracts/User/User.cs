@@ -10,6 +10,7 @@ namespace TFTI.Contracts
     [Table("users")]
     public class User
     {
+        [Key]
         [Display(Name = "id")]
         public int id { get; set; }
 

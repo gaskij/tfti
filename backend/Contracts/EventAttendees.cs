@@ -9,7 +9,7 @@ namespace TFTI.Contracts
     [Table("events_attendees")]
     public class EventAttendees
     {
-
+        [Key]
         [Required]
         public int event_id { get; set; }
 
