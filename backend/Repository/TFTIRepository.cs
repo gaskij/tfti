@@ -23,6 +23,8 @@ namespace TFTI.Repositories
         #endregion
 
         #region Public Methods
+
+        #region Create Methods
         /// <inheritdoc/>
         public async Task<int> CreateUser(NewUser newUser)
         {
@@ -92,16 +94,92 @@ namespace TFTI.Repositories
         {
             throw new System.NotImplementedException();
         }
+        #endregion
 
+        #region Update Methods
+        public Task<User> UpdateUser(User user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Event> UpdateEvent(Event eventDetails)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<EventAttendees> UpdateEventAttendees(EventAttendees eventAttendees)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<EventInvites> UpdateEventInvites(EventInvites eventInvites)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Friend> UpdateFriend(Friend friend)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Item> UpdateItem(Item item)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Media> UpdateMedia(Media media)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Message> UpdateMessage(Message message)
+        {
+            throw new System.NotImplementedException();
+        }
+        #endregion
+
+        #region Get Methods
         public Task<User> GetUser(int hostId)
         {
             throw new System.NotImplementedException();
         }
-
-        public Task<Message> GetMessage(Message message)
+        
+        public Task<Event> GetEvent(int eventId)
         {
             throw new System.NotImplementedException();
         }
+
+        public Task<EventAttendees> GetEventAttendees(int eventAttendeesId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<EventInvites> GetEventInvites(int eventInvitesId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Friend> GetFriend(int friendId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Item> GetItem(int itemId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Media> GetMedia(int mediaId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Message> GetMessage(int messageId)
+        {
+            throw new System.NotImplementedException();
+        }
+        #endregion
+
         #endregion
 
         #region Private Methods
