@@ -11,8 +11,6 @@ import {
 
 import { User } from '../../types/interfaces';
 
-// NOTES: No information about event in Invite
-
 const mockFriends: User[] = [
   {
     id: 2,
@@ -35,7 +33,7 @@ const mockFriends: User[] = [
   {
     id: 4,
     first_name: 'Jacob',
-    last_name: 'Xiang',
+    last_name: 'Jiang',
     email: '123@abc.com',
     password: 'uhhhhh',
     phone_number: '555-555-5555',

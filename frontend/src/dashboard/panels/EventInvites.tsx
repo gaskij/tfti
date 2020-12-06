@@ -9,8 +9,6 @@ import {
 
 import { EventInvite } from '../../types/interfaces';
 
-// NOTES: No information about event in Invite
-
 const mockInvites: EventInvite[] = [
   {
     event_id: 1, 

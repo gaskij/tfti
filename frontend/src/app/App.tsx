@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core';
 import theme from '../theme';
 import Header from './header/Header';
 import Dashboard from '../dashboard/Dashboard';
+import EventDetails from '../event-details/EventDetailsPage';
 import './App.css';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/index">
               <Dashboard />
+            </Route>
+            <Route path="/events/:id">
+              <EventDetails />
             </Route>
           </Switch>
         </main>
