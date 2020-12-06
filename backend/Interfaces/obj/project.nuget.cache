@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2AG710IvvqrOVjtt93RqU+xRfaLEagF0X+8/1LeYzxXvXHvrb7ZVGQxBZyn+Uiec7qxCFK0R9zqAfGf6dIuw8w==",
+  "dgSpecHash": "A4LSwGc0meT+PrjtFw830RPX/aSwjrq0PjRXoNsxBu1Gt01ENBfcnvVDTrcp0dbwAVbhBh0OUNvg2CM/3twN1Q==",
   "success": true,
-  "projectFilePath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
+  "projectFilePath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kris\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\alexi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

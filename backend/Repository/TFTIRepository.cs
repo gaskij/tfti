@@ -79,7 +79,7 @@ namespace TFTI.Repositories
 
              _context.EventInvites.Add(eventInvite);
             await _context.SaveChangesAsync();
-            return eventInvite.id;
+            return eventInvite.event_id;
         }
 
         public async Task<int> CreateFriend(Friend friend)
@@ -92,7 +92,7 @@ namespace TFTI.Repositories
             
             Item item = new Item();
             item.event_id = newItem.event_id;
-            item.user_id= newItem.user_id;
+            item.userid= newItem.userid;
             item.item_name = newItem.item_name;
             item.amount = newItem.amount;
             item.unit_type = newItem.unit_type;
@@ -100,7 +100,7 @@ namespace TFTI.Repositories
             _context.Items.Add(item);
             await _context.SaveChangesAsync();
 
-            return item.id;
+            return item.item_id;
 
       
         }

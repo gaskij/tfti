@@ -36,17 +36,26 @@ namespace Kalandear.API.Controllers
             return userResponse;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="eventDetails">
+        ///     The new event to be created.
+        ///     "event" is keyword so we must use eventDetails.
+        /// </param>
+        /// <returns></returns>
         [Route("events")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<int> CreateEvent(Event eventDetails)
+        public async Task<int> CreateEvent([FromBody] NewEvent eventDetails)
         {
             int eventId = _HostRepository.CreateEvent(eventDetails).Result;
 
             return eventId;
         }
+
 
 
         /// <summary>
