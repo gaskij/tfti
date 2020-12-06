@@ -40,6 +40,52 @@ namespace Kalandear.API.Controllers
         //}
 
 
+
+        
+        /// <summary>
+        ///     Create a new invite and publish it to the database.
+        /// </summary>
+        /// <param name="eventInvite">
+        ///    New event invite to be created
+        /// </param>
+        /// <returns>
+        /// </returns>
+
+        [Route("events/invites")]
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<int> CreateEventInvites([FromBody] NewEventInvites newEventInvites)
+        {
+            int eventId = _HostRepository.CreateEventInvites(newEventInvites).Result;
+
+            return eventId;
+        }
+
+
+
+        /// <summary>
+        ///     Create a new item and publish it to the database.
+        /// </summary>
+        /// <param name="newItem">
+        ///    New item invite to be created
+        /// </param>
+        /// <returns>
+        /// </returns>
+        [Route("items")]
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<int> CreateItem([FromBody] NewItem newItem )
+        {
+            int itemId = _HostRepository.CreateItem(newItem).Result;
+
+            return itemId;
+        }
+
+
         /// <summary>
         ///     Retrieve a host user based on the specified id.
         /// </summary>
