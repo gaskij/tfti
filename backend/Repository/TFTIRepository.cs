@@ -70,26 +70,45 @@ namespace TFTI.Repositories
             return eventAttendees;
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateEventInvites(NewEventInvites newEventInvites)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateFriend(Friend friend)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateItem(NewItem newItem)
         {
-            throw new System.NotImplementedException();
+            Item item = new Item
+            {
+                amount = newItem.amount,
+                event_id = newItem.event_id,
+                item_id = newItem.item_id,
+                item_name = newItem.item_name,
+                unit_type = newItem.unit_type,
+                userid = newItem.userid
+            };
+
+            _context.Items.Add(item);
+            await _context.SaveChangesAsync();
+
+            return item.item_id;
+           
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateMedia(Media media)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateMessage(NewMessage newMessage)
         {
             throw new System.NotImplementedException();
@@ -97,41 +116,49 @@ namespace TFTI.Repositories
         #endregion
 
         #region Update Methods
+        /// <inheritdoc />
         public Task<User> UpdateUser(User user)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Event> UpdateEvent(Event eventDetails)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<EventAttendees> UpdateEventAttendees(EventAttendees eventAttendees)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<EventInvites> UpdateEventInvites(EventInvites eventInvites)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Friend> UpdateFriend(Friend friend)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Item> UpdateItem(Item item)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Media> UpdateMedia(Media media)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Message> UpdateMessage(Message message)
         {
             throw new System.NotImplementedException();
@@ -139,41 +166,48 @@ namespace TFTI.Repositories
         #endregion
 
         #region Get Methods
+        /// <inheritdoc />
         public Task<User> GetUser(int hostId)
         {
             throw new System.NotImplementedException();
         }
-        
+
+        /// <inheritdoc />
         public Task<Event> GetEvent(int eventId)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<EventAttendees> GetEventAttendees(int eventAttendeesId)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<EventInvites> GetEventInvites(int eventInvitesId)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Friend> GetFriend(int friendId)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Item> GetItem(int itemId)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public Task<Media> GetMedia(int mediaId)
         {
             throw new System.NotImplementedException();
         }
-
+        /// <inheritdoc />
         public Task<Message> GetMessage(int messageId)
         {
             throw new System.NotImplementedException();

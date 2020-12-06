@@ -37,6 +37,14 @@ namespace Kalandear.API.Controllers
             return userResponse;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="eventDetails">
+        ///     The new event to be created.
+        ///     "event" is keyword so we must use eventDetails.
+        /// </param>
+        /// <returns></returns>
         [Route("events")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -49,6 +57,11 @@ namespace Kalandear.API.Controllers
             return eventId;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="eventAttendees"></param>
+        /// <returns></returns>
         [Route("event-attendees")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -61,6 +74,11 @@ namespace Kalandear.API.Controllers
             return eventAttendeeResults;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="friend"></param>
+        /// <returns></returns>
         [Route("friends")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -73,6 +91,11 @@ namespace Kalandear.API.Controllers
             return result;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
         [Route("items")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -85,6 +108,11 @@ namespace Kalandear.API.Controllers
             return result;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="media"></param>
+        /// <returns></returns>
         [Route("media")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -231,6 +259,18 @@ namespace Kalandear.API.Controllers
             var eventAttendeeResults = _HostRepository.GetEventAttendees(eventAttendeesId).Result;
 
             return eventAttendeeResults;
+        }
+
+        [Route("event-attendees/{eventInvitesId}")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<EventInvites> GetEventInvites(int eventAttendeesId)
+        {
+            var results = _HostRepository.GetEventInvites(eventAttendeesId).Result;
+
+            return results;
         }
 
         [Route("friends/{friendId}")]
