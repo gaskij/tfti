@@ -70,7 +70,12 @@ namespace TFTI.Repositories
 
         public async Task<int> CreateEventInvites(NewEventInvites newEventInvites)
         {
-            throw new System.NotImplementedException();
+            EventInvites eventInvite = new EventInvites();
+            eventInvite.event_id = newEventInvites.event_id;
+            eventInvite.accepted = newEventInvites.accepted;
+            eventInvite.recipient_id = newEventInvites.recipient_id;
+            eventInvite.sender_id = newEventInvites.sender_id;
+            eventInvite.invite_time = newEventInvites.invite_time;
         }
 
         public async Task<int> CreateFriend(Friend friend)
@@ -80,7 +85,20 @@ namespace TFTI.Repositories
 
         public async Task<int> CreateItem(NewItem newItem)
         {
-            throw new System.NotImplementedException();
+            
+            Item item = new Item();
+            item.event_id = newItem.event_id;
+            item.user_id= newItem.user_id;
+            item.item_name = newItem.item_name;
+            item.amount = newItem.amount;
+            item.unit_type = newItem.unit_type;
+     
+            _context.Users.Add(item);
+            await _context.SaveChangesAsync();
+
+            return item.id;
+
+      
         }
 
         public async Task<int> CreateMedia(Media media)
