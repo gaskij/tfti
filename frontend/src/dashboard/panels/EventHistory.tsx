@@ -11,7 +11,8 @@ import { Event } from '../../types/interfaces';
 
 const mockEvents: Event[] = [
   {
-    event_id: 4, 
+    event_id: 4,
+    event_title: "PAX East",
     host_id: 1,
     location: '100 Union Dr',
     event_date: new Date(),
@@ -21,6 +22,7 @@ const mockEvents: Event[] = [
   },
   {
     event_id: 5, 
+    event_title: "Llamapalooza",
     host_id: 2,
     location: 'Prospect Park',
     event_date: new Date(),
@@ -45,7 +47,7 @@ const EventHistory = () => {
                   {mockEvents.map((event) => (
                     <Paper elevation={2} style={{marginBottom: '16px'}} key={event.event_id}>
                       <Box p={1}>
-                        <Typography variant="body1">{event.event_summary}</Typography>
+                        <Typography variant="body1">{event.event_title}</Typography>
                       </Box>
                     </Paper>
                   ))}

@@ -11,7 +11,8 @@ import { Event } from '../../types/interfaces';
 
 const mockEvents: Event[] = [
   {
-    event_id: 1, 
+    event_id: 1,
+    event_title: "Kathy's Baby Shower",
     host_id: 1,
     location: '100 Union Dr',
     event_date: new Date(),
@@ -20,7 +21,8 @@ const mockEvents: Event[] = [
     addtional_links: 'a',
   },
   {
-    event_id: 2, 
+    event_id: 2,
+    event_title: "Fall Festival",
     host_id: 2,
     location: 'Prospect Park',
     event_date: new Date(),
@@ -29,7 +31,8 @@ const mockEvents: Event[] = [
     addtional_links: 'a',
   },
   {
-    event_id: 3, 
+    event_id: 3,
+    event_title: 'Absolute Banger',
     host_id: 1,
     location: "Joe Mama's House",
     event_date: new Date(),
@@ -54,7 +57,7 @@ const UpcomingEvents = () => {
                   {mockEvents.map((event) => (
                     <Paper elevation={2} style={{marginBottom: '16px'}} key={event.event_id}>
                       <Box p={1}>
-                        <Typography variant="body1">{event.event_summary}</Typography>
+                        <Typography variant="body1">{event.event_title}</Typography>
                         <Typography variant="body1">{event.event_date.toLocaleDateString()}</Typography>
                         <Typography variant="body1">{event.location}</Typography>  
                       </Box>

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { AccountCircle, Mail } from '@material-ui/icons';
+
+import {Link } from "react-router-dom";
+
 import { 
   AppBar,
   Toolbar,
@@ -52,9 +55,9 @@ const Header = () => {
             <Button color="inherit">
               Create Event
             </Button>
-            <Button color="inherit">
+            <Link to="/my-events"><Button color="inherit">
               My Events
-            </Button>
+            </Button></Link>
           </div>
           {auth && (
             <div>
