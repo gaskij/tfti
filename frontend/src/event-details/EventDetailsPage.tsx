@@ -47,7 +47,7 @@ const EventDetailsPage = () => {
             <GuestList hostId={1} />
           </Grid>
           <Grid item>
-            <ItemList hostId={1} />
+            <ItemList eventId={1} />
           </Grid>
         </Grid>
       </Grid>

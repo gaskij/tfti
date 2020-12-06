@@ -13,7 +13,7 @@ import {
   TableBody,
   Typography,
 } from '@material-ui/core';
-import { Check } from '@material-ui/icons';
+import { Check, Clear } from '@material-ui/icons';
 import useAxios from 'axios-hooks';
 
 import { User } from '../../types/interfaces'
@@ -96,7 +96,7 @@ const GuestList = ({ hostId }: Props): ReactElement => {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell></TableCell>
+              <TableCell>Accepted?</TableCell>
               <TableCell>
                 {mockGuests.filter(guest => guest.id === hostId)[0].first_name} (Host)
               </TableCell>
@@ -105,7 +105,7 @@ const GuestList = ({ hostId }: Props): ReactElement => {
           <TableBody>
             {mockGuests.filter(guest => guest.id !== hostId).map((guest) => (
               <TableRow key={guest.id}>
-                <TableCell>{guest.id < 3 && <Check />}</TableCell>
+                <TableCell>{guest.id < 3 ? <Check /> : <Clear />}</TableCell>
                 <TableCell>{guest.first_name} {guest.last_name}</TableCell>
               </TableRow>
             ))}

@@ -4,13 +4,15 @@ import { AccountCircle, Mail } from '@material-ui/icons';
 import { 
   AppBar,
   Toolbar,
-  Typography,
   IconButton,
   Menu,
   MenuItem,
   Button,
-  Badge
+  Badge,
+  Typography
 } from '@material-ui/core';
+
+import logo from './logo.svg';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     title: {
-      flexGrow: 1,
+      flexGrow: 1
     },
   }),
 );
@@ -42,9 +44,10 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            tfti
-          </Typography>
+          <span className={classes.title}>
+            {/* <img src={logo} alt="logo" /> */}
+            <Typography variant="h6">tfti</Typography>
+          </span>
           <div>
             <Button color="inherit">
               Browse
