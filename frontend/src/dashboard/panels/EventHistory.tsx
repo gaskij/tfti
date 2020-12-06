@@ -6,6 +6,7 @@ import {
   Paper,
   Typography
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import { Event } from '../../types/interfaces';
 
@@ -45,11 +46,13 @@ const EventHistory = () => {
               ? <Typography variant="body1">There was an error: {JSON.stringify(error)}</Typography>
               : <>
                   {mockEvents.map((event) => (
-                    <Paper elevation={2} style={{marginBottom: '16px'}} key={event.event_id}>
-                      <Box p={1}>
-                        <Typography variant="body1">{event.event_title}</Typography>
-                      </Box>
-                    </Paper>
+                    <Link to={`/events/${event.event_id}`} key={event.event_id}>
+                      <Paper elevation={2} style={{marginBottom: '16px'}}>
+                        <Box p={1}>
+                          <Typography variant="body1">{event.event_title}</Typography>
+                        </Box>
+                      </Paper>
+                    </Link>
                   ))}
                 </>
         )

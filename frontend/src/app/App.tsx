@@ -6,6 +6,7 @@ import theme from '../theme';
 import Header from './header/Header';
 import Dashboard from '../dashboard/Dashboard';
 import MyEvents from '../my-events/MyEvents';
+import EventDetails from '../event-details/EventDetailsPage';
 import './App.css';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/my-events">
               <MyEvents />
+            </Route>
+            <Route path="/events/:id">
+              <EventDetails />
             </Route>
           </Switch>
         </main>
