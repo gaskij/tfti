@@ -9,9 +9,10 @@ import {
   Menu,
   MenuItem,
   Button,
-  Badge
+  Badge,
+  Box
 } from '@material-ui/core';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from './logo.svg';
 
@@ -45,16 +46,25 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <span className={classes.title}>
-            {/* <img src={logo} alt="logo" /> */}
-            <Typography variant="h6">tfti</Typography>
-          </span>
+          <Link to="/">
+            <Box flex>
+              <img
+                src={logo}
+                alt="tfti"
+                width="30"
+                height="30"
+                style={{display: 'inline-block', verticalAlign: '-35%'}}
+              />
+              <Typography style={{display: 'inline-block', paddingLeft: '4px'}} variant="h6">tfti</Typography>
+            </Box>
+          </Link>
+          <span className={classes.title} />
           <div>
             <Button color="inherit">Browse</Button>
             <Button color="inherit">Create Event</Button>
-            <Link to="/my-events">
+            <NavLink to="/my-events" activeClassName="currentPage">
               <Button color="inherit">My Events</Button>
-            </Link>
+            </NavLink>
           </div>
           {auth && (
             <div>

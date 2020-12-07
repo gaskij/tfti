@@ -10,6 +10,7 @@ import {
 
 const mockEvent: Event = {
   event_id: 4,
+  event_title: "PAX East",
   host_id: 1,
   location: '100 Union Dr',
   event_date: new Date(),

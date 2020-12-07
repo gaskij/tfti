@@ -23,3 +23,12 @@ main {
 footer {
   flex-shrink: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a.currentPage {
+  color: #5da9e9;
+}
