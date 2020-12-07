@@ -6,12 +6,13 @@ namespace TFTI.Contracts
     [Table("item_list")]
     public class Item
     {
+        [Key]
         public int item_id { get; set; }
 
         [Required]
         public int event_id { get; set; }
 
-        public int userid { get; set; }
+        public int user_id { get; set; }
 
         public string item_name { get; set; }
 

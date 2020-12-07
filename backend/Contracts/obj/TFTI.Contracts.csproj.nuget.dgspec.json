@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {}
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
+        "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
         "projectName": "TFTI.Contracts",
-        "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
-        "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\obj\\",
+        "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
+        "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

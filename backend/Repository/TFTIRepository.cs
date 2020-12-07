@@ -1,4 +1,5 @@
 ﻿using Kalandear.Data;
+using System.Linq;
 using System.Threading.Tasks;
 using TFTI.Contracts;
 using TFTI.Interfaces;
@@ -23,6 +24,8 @@ namespace TFTI.Repositories
         #endregion
 
         #region Public Methods
+
+        #region Create Methods
         /// <inheritdoc/>
         public async Task<int> CreateUser(NewUser newUser)
         {
@@ -68,6 +71,7 @@ namespace TFTI.Repositories
             return eventAttendees;
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateEventInvites(NewEventInvites newEventInvites)
         {
             EventInvites eventInvite = new EventInvites();
@@ -82,17 +86,19 @@ namespace TFTI.Repositories
             return eventInvite.event_id;
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateFriend(Friend friend)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateItem(NewItem newItem)
         {
             
             Item item = new Item();
             item.event_id = newItem.event_id;
-            item.userid= newItem.userid;
+            item.user_id= newItem.user_id;
             item.item_name = newItem.item_name;
             item.amount = newItem.amount;
             item.unit_type = newItem.unit_type;
@@ -105,25 +111,132 @@ namespace TFTI.Repositories
       
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateMedia(Media media)
         {
             throw new System.NotImplementedException();
         }
 
+        /// <inheritdoc />
         public async Task<int> CreateMessage(NewMessage newMessage)
         {
             throw new System.NotImplementedException();
         }
+        #endregion
 
+        #region Update Methods
+        /// <inheritdoc />
+        public Task<User> UpdateUser(User user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Event> UpdateEvent(Event eventDetails)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<EventAttendees> UpdateEventAttendees(EventAttendees eventAttendees)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<EventInvites> UpdateEventInvites(EventInvites eventInvites)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Friend> UpdateFriend(Friend friend)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Item> UpdateItem(Item item)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Media> UpdateMedia(Media media)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Message> UpdateMessage(Message message)
+        {
+            throw new System.NotImplementedException();
+        }
+        #endregion
+
+        #region Get Methods
+        /// <inheritdoc />
         public Task<User> GetUser(int hostId)
         {
             throw new System.NotImplementedException();
         }
 
-        public Task<Message> GetMessage(Message message)
+        /// <inheritdoc />
+        public Task<Event> GetEvent(int eventId)
         {
             throw new System.NotImplementedException();
         }
+
+        /// <inheritdoc />
+        public async Task<CompleteEvent> GetCompleteEvent(int eventId)
+        {
+            CompleteEvent completeEvent = new CompleteEvent();
+
+            completeEvent.EventDetails = _context.Events.Find(eventId);
+
+            completeEvent.Attendees = _context.EventAttendees.Where(x => x.event_id == eventId).ToList();
+
+            completeEvent.Items = _context.Items.Where(x => x.event_id == eventId).ToList();
+
+            return completeEvent;
+        }
+
+        /// <inheritdoc />
+        public Task<EventAttendees> GetEventAttendees(int eventAttendeesId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<EventInvites> GetEventInvites(int eventInvitesId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Friend> GetFriend(int friendId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Item> GetItem(int itemId)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public Task<Media> GetMedia(int mediaId)
+        {
+            throw new System.NotImplementedException();
+        }
+        /// <inheritdoc />
+        public Task<Message> GetMessage(int messageId)
+        {
+            throw new System.NotImplementedException();
+        }
+        #endregion
+
         #endregion
 
         #region Private Methods

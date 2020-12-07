@@ -129,19 +129,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexi\\.nuget\\packages\\": {}
+    "C:\\Users\\kris\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
+      "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
       "projectName": "TFTI.Interfaces",
-      "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
-      "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\obj\\",
+      "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -155,8 +159,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
-              "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
+            "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
+              "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
             }
           }
         }

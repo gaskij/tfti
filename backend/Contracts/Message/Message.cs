@@ -9,8 +9,9 @@ namespace TFTI.Contracts
     [Table("messages")]
     public class Message
     {
-        public int messages_id { get; set; }
         [Key]
+        public int messages_id { get; set; }
+        
         public int sender_id { get; set; }
         public int recipient_id { get; set; }
         public DateTime message_time { get; set; }
