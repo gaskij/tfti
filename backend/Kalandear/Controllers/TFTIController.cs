@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using TFTI.Contracts;
 using TFTI.Interfaces;
@@ -233,6 +234,18 @@ namespace Kalandear.API.Controllers
         public async Task<User> GetUser(int userId)
         {
             User result = _HostRepository.GetUser(userId).Result;
+
+            return result;
+        }
+
+        [Route("all-events")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IList<Event>> GetAllEvents()
+        {
+            var result = _HostRepository.GetAllEvents().Result;
 
             return result;
         }

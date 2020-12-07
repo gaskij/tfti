@@ -189,6 +189,12 @@ namespace TFTI.Repositories
         }
 
         /// <inheritdoc />
+        public async Task<IList<Event>> GetAllEvents()
+        {
+            return _context.Events.ToList();
+        }
+
+        /// <inheritdoc />
         public Task<Event> GetEvent(int eventId)
         {
             throw new System.NotImplementedException();
