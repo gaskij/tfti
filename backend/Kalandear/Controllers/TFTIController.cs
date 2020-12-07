@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using TFTI.Interfaces;
 namespace Kalandear.API.Controllers
 {
     [Route("tfti")]
+    [EnableCors]
     [ApiController]
     public class TFTIController : ControllerBase
     {
