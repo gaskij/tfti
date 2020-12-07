@@ -22,3 +22,15 @@ D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI
 D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CopyComplete
 D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.dll
 D:\Users\kris\Source\Repos\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.pdb
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.deps.json
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.dll
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Interfaces.pdb
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Contracts.dll
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\bin\Debug\netstandard2.1\TFTI.Contracts.pdb
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csprojAssemblyReference.cache
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.AssemblyInfoInputs.cache
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.AssemblyInfo.cs
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.csproj.CopyComplete
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.dll
+C:\Users\alexi\Dropbox\tfti\backend\Interfaces\obj\Debug\netstandard2.1\TFTI.Interfaces.pdb

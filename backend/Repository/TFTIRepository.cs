@@ -73,7 +73,16 @@ namespace TFTI.Repositories
         /// <inheritdoc />
         public async Task<int> CreateEventInvites(NewEventInvites newEventInvites)
         {
-            throw new System.NotImplementedException();
+            EventInvites eventInvite = new EventInvites();
+            eventInvite.event_id = newEventInvites.event_id;
+            eventInvite.accepted = newEventInvites.accepted;
+            eventInvite.recipient_id = newEventInvites.recipient_id;
+            eventInvite.sender_id = newEventInvites.sender_id;
+            eventInvite.invite_time = newEventInvites.invite_time;
+
+             _context.EventInvites.Add(eventInvite);
+            await _context.SaveChangesAsync();
+            return eventInvite.event_id;
         }
 
         /// <inheritdoc />
@@ -85,21 +94,20 @@ namespace TFTI.Repositories
         /// <inheritdoc />
         public async Task<int> CreateItem(NewItem newItem)
         {
-            Item item = new Item
-            {
-                amount = newItem.amount,
-                event_id = newItem.event_id,
-                item_id = newItem.item_id,
-                item_name = newItem.item_name,
-                unit_type = newItem.unit_type,
-                userid = newItem.userid
-            };
-
+            
+            Item item = new Item();
+            item.event_id = newItem.event_id;
+            item.userid= newItem.userid;
+            item.item_name = newItem.item_name;
+            item.amount = newItem.amount;
+            item.unit_type = newItem.unit_type;
+     
             _context.Items.Add(item);
             await _context.SaveChangesAsync();
 
             return item.item_id;
-           
+
+      
         }
 
         /// <inheritdoc />
