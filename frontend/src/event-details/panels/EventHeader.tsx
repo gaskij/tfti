@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReactElement } from 'react';
-import { Grid, Typography } from '@material-ui/core';
-import { Edit } from '@material-ui/icons';
+import { Grid, Typography, IconButton } from '@material-ui/core';
+import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
 
 import { Event } from '../../types/interfaces'
 
@@ -18,7 +18,7 @@ const EventHeader = ({ event }: Props): ReactElement => (
     spacing={2}
   >
     <Grid item>
-      <Typography variant="h3">{event.event_id} Name</Typography>
+      <Typography variant="h4">{event.event_id} Name</Typography>
     </Grid>
     <Grid item style={{flex: 1}}>
       <Typography variant="body1">
@@ -29,7 +29,9 @@ const EventHeader = ({ event }: Props): ReactElement => (
       </Typography>
     </Grid>
     <Grid item>
-      <Edit />
+      <IconButton aria-label="edit event" color="inherit">
+        <CreateOutlinedIcon />
+      </IconButton>
     </Grid>
   </Grid>
 )

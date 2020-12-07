@@ -53,8 +53,8 @@ const mockFriends: User[] = [
 const useStyles = makeStyles((theme) =>
   createStyles({
     avatar: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.getContrastText(theme.palette.primary.main),
+      backgroundColor: theme.palette.secondary.main,
+      color: '#ffffff',
     },
   }),
 );
@@ -76,7 +76,7 @@ const FriendsList = () => {
                 <>
                   {mockFriends.map((friend) => (
                     <Paper style={{marginBottom: '16px'}} key={friend.id}>
-                      <Box p={1} flex>
+                      <Box p={1}>
                         <div style={{display: 'inline-block'}}>
                           <Avatar alt={friend.first_name} src="/broken-image.jpg" className={classes.avatar} />
                         </div>

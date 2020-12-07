@@ -6,9 +6,10 @@ import {
   Paper,
   Typography
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import { Event } from '../../types/interfaces';
-import { Link } from 'react-router-dom';
+import { baseURL } from '../../config';
 
 const mockEvents: Event[] = [
   {
@@ -45,7 +46,7 @@ const mockEvents: Event[] = [
 
 const UpcomingEvents = () => {
     const [{ data, loading, error }] = useAxios<[Event]>({
-      url: `/api/invites`,
+      url: `${baseURL}/events`,
     }, { manual: false, useCache: false });
 
     return (

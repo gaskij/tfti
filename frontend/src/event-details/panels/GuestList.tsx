@@ -74,19 +74,20 @@ const useStyles = makeStyles({
 
 interface Props {
   hostId: number;
+  guestList: Object[];
 }
 
-const GuestList = ({ hostId }: Props): ReactElement => {
+const GuestList = ({ hostId, guestList }: Props): ReactElement => {
   const classes = useStyles();
 
-  const [{ data, loading, error }] = useAxios<[User]>({
-    url: `/api/events/id/guests`,
-  }, { manual: false, useCache: false });
+  // const [{ data, loading, error }] = useAxios<[User]>({
+  //   url: `/api/events/id/guests`,
+  // }, { manual: false, useCache: false });
 
-  if (loading) return <CircularProgress color="secondary"/>
+  // if (loading) return <CircularProgress color="secondary"/>
   
-  if (!error)
-    return <Typography variant="body1">There was an error: {JSON.stringify(error)}</Typography>
+  // if (!error)
+  //   return <Typography variant="body1">There was an error: {JSON.stringify(error)}</Typography>
   
   return (
     <Box>

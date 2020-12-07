@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Box, Grid, Paper, Typography, IconButton } from '@material-ui/core';
 import CreateOutlinedIcon from '@material-ui/icons/CreateOutlined';
+import { Link } from 'react-router-dom';
 
 import { Event } from '../types/interfaces';
 
@@ -47,35 +48,37 @@ interface Props2 {
 
 const EventCard = ({ e, size, children }: PropsWithChildren<Props>) => {
   const classes = useStyles();
-  const isHost = e.host_id == 3;
+  const isHost = e.host_id === 3;
 
   return (
     <Grid item xs={size || 5}>
-      <Paper className={`${isHost ? classes.host : classes.guest}`} elevation={2}>
-        <Box mb={1}>
-          <Typography variant="h5" className={classes.title}>{e.event_title} 
-            <IconButton aria-label="edit event" color="inherit">
-              <CreateOutlinedIcon className={`${isHost ? '' : classes.hidden}`} />
-            </IconButton>
-          </Typography>
-          
-          <Grid
-          container
-          direction="row"
-          justify="flex-start"
-          flex-flow="wrap"
-          alignContent="flex-start"
-          >
-            <EventData type='Date' content={e.event_date.getDate()} />
-            <EventData type='Time' content={e.event_date.getHours()} />
-            <EventData type='Location' content={e.location} />
-            <EventData type='Host' content={e.host_id} />
-          </Grid>
-          <Typography variant="body1" className={classes.bolded}>Details:</Typography>
-          <Typography variant="body1">{e.event_summary}</Typography>
-        </Box>
-        {children}
-      </Paper>
+      <Link to={`/events/${e.event_id}`}>
+        <Paper className={`${isHost ? classes.host : classes.guest}`} elevation={2}>
+          <Box mb={1}>
+            <Typography variant="h5" className={classes.title}>{e.event_title} 
+              <IconButton aria-label="edit event" color="inherit">
+                <CreateOutlinedIcon className={`${isHost ? '' : classes.hidden}`} />
+              </IconButton>
+            </Typography>
+            
+            <Grid
+            container
+            direction="row"
+            justify="flex-start"
+            flex-flow="wrap"
+            alignContent="flex-start"
+            >
+              <EventData type='Date' content={e.event_date.getDate()} />
+              <EventData type='Time' content={e.event_date.getHours()} />
+              <EventData type='Location' content={e.location} />
+              <EventData type='Host' content={e.host_id} />
+            </Grid>
+            <Typography variant="body1" className={classes.bolded}>Details:</Typography>
+            <Typography variant="body1">{e.event_summary}</Typography>
+          </Box>
+          {children}
+        </Paper>
+      </Link>
     </Grid>
   );
 }

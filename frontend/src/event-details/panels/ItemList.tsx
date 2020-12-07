@@ -53,7 +53,7 @@ const mockItems: Item[] = [
   },
   {
     event_id: 1,
-    item_id: 1,  
+    item_id: 5,  
     item_name: 'Balloons',
     user_id: 5,
     amount: 5,

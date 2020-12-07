@@ -47,7 +47,7 @@ const Header = () => {
       <AppBar position="static">
         <Toolbar>
           <Link to="/">
-            <Box flex>
+            <Box>
               <img
                 src={logo}
                 alt="tfti"
