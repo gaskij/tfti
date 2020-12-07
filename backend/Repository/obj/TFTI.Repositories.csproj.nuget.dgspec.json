@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Repository\\TFTI.Repositories.csproj": {}
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Repository\\TFTI.Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
+        "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
         "projectName": "TFTI.Contracts",
-        "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
-        "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\obj\\",
+        "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
+        "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,17 +68,20 @@
         }
       }
     },
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj": {
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
+        "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
         "projectName": "TFTI.Interfaces",
-        "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\obj\\",
+        "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +95,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
-                "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
+              "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
+                "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
               }
             }
           }
@@ -123,17 +129,20 @@
         }
       }
     },
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj": {
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj",
+        "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj",
         "projectName": "TFTI.Data",
-        "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj",
-        "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\obj\\",
+        "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj",
+        "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -147,8 +156,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
-                "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
+              "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj": {
+                "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj"
               }
             }
           }
@@ -192,17 +201,20 @@
         }
       }
     },
-    "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Repository\\TFTI.Repositories.csproj": {
+    "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Repository\\TFTI.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Repository\\TFTI.Repositories.csproj",
+        "projectUniqueName": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Repository\\TFTI.Repositories.csproj",
         "projectName": "TFTI.Repositories",
-        "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Repository\\TFTI.Repositories.csproj",
-        "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Repository\\obj\\",
+        "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Repository\\TFTI.Repositories.csproj",
+        "packagesPath": "C:\\Users\\kris\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -216,11 +228,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj"
+              "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj": {
+                "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Interfaces\\TFTI.Interfaces.csproj"
               },
-              "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj": {
-                "projectPath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj"
+              "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj": {
+                "projectPath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Kalandear.Data\\TFTI.Data.csproj"
               }
             }
           }

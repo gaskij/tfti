@@ -237,14 +237,26 @@ namespace Kalandear.API.Controllers
             return result;
         }
 
-        [Route("events/{eventDetailsId}")]
+        [Route("events/{eventId}")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<Event> GetEvent(int eventDetailsId)
+        public async Task<Event> GetEvent(int eventId)
         {
-            var result = _HostRepository.GetEvent(eventDetailsId).Result;
+            var result = _HostRepository.GetEvent(eventId).Result;
+
+            return result;
+        }
+
+        [Route("events/{eventId}/complete-events")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<CompleteEvent> GetCompleteEvent(int eventId)
+        {
+            var result = _HostRepository.GetCompleteEvent(eventId).Result;
 
             return result;
         }

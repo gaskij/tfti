@@ -1,4 +1,5 @@
 ﻿using Kalandear.Data;
+using System.Linq;
 using System.Threading.Tasks;
 using TFTI.Contracts;
 using TFTI.Interfaces;
@@ -97,7 +98,7 @@ namespace TFTI.Repositories
             
             Item item = new Item();
             item.event_id = newItem.event_id;
-            item.userid= newItem.userid;
+            item.user_id= newItem.user_id;
             item.item_name = newItem.item_name;
             item.amount = newItem.amount;
             item.unit_type = newItem.unit_type;
@@ -184,6 +185,20 @@ namespace TFTI.Repositories
         public Task<Event> GetEvent(int eventId)
         {
             throw new System.NotImplementedException();
+        }
+
+        /// <inheritdoc />
+        public async Task<CompleteEvent> GetCompleteEvent(int eventId)
+        {
+            CompleteEvent completeEvent = new CompleteEvent();
+
+            completeEvent.EventDetails = _context.Events.Find(eventId);
+
+            completeEvent.Attendees = _context.EventAttendees.Where(x => x.event_id == eventId).ToList();
+
+            completeEvent.Items = _context.Items.Where(x => x.event_id == eventId).ToList();
+
+            return completeEvent;
         }
 
         /// <inheritdoc />

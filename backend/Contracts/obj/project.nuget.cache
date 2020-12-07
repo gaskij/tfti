@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n76cR6jvmZmoV0wxTwWY4BsSdxtqpckBLrh07p3dTpPWfUgbWhSMjmsWoPWGYRD9IXxwY5uHAUiFfsPSeTbinw==",
+  "dgSpecHash": "5G1l3rmua5zSznz0L60/r7+3fzY/uLF9S11WE3ReX6TKCRB7o7npoKPmNFefEeV/v4iuvC75MaEbevwKh5rlQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexi\\Dropbox\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
+  "projectFilePath": "D:\\Users\\kris\\Source\\Repos\\tfti\\backend\\Contracts\\TFTI.Contracts.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alexi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\alexi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\alexi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\kris\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

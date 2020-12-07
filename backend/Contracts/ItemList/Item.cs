@@ -12,7 +12,7 @@ namespace TFTI.Contracts
         [Required]
         public int event_id { get; set; }
 
-        public int userid { get; set; }
+        public int user_id { get; set; }
 
         public string item_name { get; set; }
 

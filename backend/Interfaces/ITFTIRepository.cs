@@ -148,6 +148,13 @@ namespace TFTI.Interfaces
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="eventDetailsId"></param>
+        /// <returns></returns>
+        Task<CompleteEvent> GetCompleteEvent(int eventDetailsId);
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="eventAttendees"></param>
         /// <returns></returns>
         Task<EventAttendees> GetEventAttendees(int eventAttendeesId);
