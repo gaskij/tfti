@@ -93,7 +93,7 @@ const GuestList = ({ hostId }: Props): ReactElement => {
       <Typography variant="h5">Guest List</Typography>
       <Box py={1} />
       <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
+        <Table className={classes.table} size="small" aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Accepted?</TableCell>
