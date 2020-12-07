@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using TFTI.Contracts;
 
 namespace TFTI.Interfaces
@@ -25,7 +26,7 @@ namespace TFTI.Interfaces
         /// </summary>
         /// <param name="eventAttendees"></param>
         /// <returns></returns>
-        Task<EventAttendees> CreateEventAttendees(EventAttendees eventAttendees);
+        Task<EventAttendees> CreateEventAttendees(NewEventAttendee newEventAttendees);
 
         /// <summary>
         /// 
@@ -137,6 +138,12 @@ namespace TFTI.Interfaces
         ///     A populated <c>Host</c> object.
         /// </returns>
         Task<User> GetUser(int hostId);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        Task<IList<Event>> GetAllEvents();
 
         /// <summary>
         /// 
