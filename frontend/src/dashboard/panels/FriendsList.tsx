@@ -76,9 +76,13 @@ const FriendsList = () => {
                 <>
                   {mockFriends.map((friend) => (
                     <Paper style={{marginBottom: '16px'}} key={friend.id}>
-                      <Box p={1}>
-                        <Avatar alt={friend.first_name} src="/broken-image.jpg" className={classes.avatar} />
-                        <Typography variant="body1">{friend.first_name} {friend.last_name}</Typography>
+                      <Box p={1} flex>
+                        <div style={{display: 'inline-block'}}>
+                          <Avatar alt={friend.first_name} src="/broken-image.jpg" className={classes.avatar} />
+                        </div>
+                        <div style={{display: 'inline-block', paddingLeft: '8px', verticalAlign: "60%"}}>
+                          <Typography variant="body1">{friend.first_name} {friend.last_name}</Typography>
+                        </div>
                       </Box>
                     </Paper>
                   ))}
