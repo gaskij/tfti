@@ -1,0 +1,12 @@
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\bin\Debug\netstandard2.0\Kalandear.Data.deps.json
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\bin\Debug\netstandard2.0\Kalandear.Data.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\bin\Debug\netstandard2.0\Kalandear.Data.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.csprojAssemblyReference.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.csproj.CopyComplete
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\obj\Debug\netstandard2.0\Kalandear.Data.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\bin\Debug\netstandard2.0\Kalandear.Contracts.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Kalandear.Data\bin\Debug\netstandard2.0\Kalandear.Contracts.pdb

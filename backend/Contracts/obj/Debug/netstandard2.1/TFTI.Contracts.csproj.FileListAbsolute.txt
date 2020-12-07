@@ -1,0 +1,9 @@
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\bin\Debug\netstandard2.1\TFTI.Contracts.deps.json
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\bin\Debug\netstandard2.1\TFTI.Contracts.dll
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\bin\Debug\netstandard2.1\TFTI.Contracts.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.dll
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.pdb
+D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.1\TFTI.Contracts.csprojAssemblyReference.cache

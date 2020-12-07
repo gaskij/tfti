@@ -1,0 +1,12 @@
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\bin\Debug\netstandard2.0\Kalandear.Repositories.deps.json
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\bin\Debug\netstandard2.0\Kalandear.Repositories.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\bin\Debug\netstandard2.0\Kalandear.Repositories.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\bin\Debug\netstandard2.0\Kalandear.Interfaces.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\bin\Debug\netstandard2.0\Kalandear.Interfaces.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.csprojAssemblyReference.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.csproj.CopyComplete
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Repository\obj\Debug\netstandard2.0\Kalandear.Repositories.pdb

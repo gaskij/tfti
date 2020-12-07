@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\Contracts",
+    "\\backend\\Contracts\\EventInvites",
+    "\\backend\\Contracts\\ItemList",
+    "\\backend\\Interfaces",
+    "\\backend\\Kalandear",
+    "\\backend\\Repository",
+    "\\backend\\TFTI",
+    "\\backend\\TFTI\\Controllers"
+  ],
+  "SelectedNode": "\\backend\\TFTIAPI.sln",
+  "PreviewInSolutionExplorer": false
+}

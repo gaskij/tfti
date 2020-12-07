@@ -1,0 +1,9 @@
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\bin\Debug\netstandard2.0\Contracts.deps.json
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\bin\Debug\netstandard2.0\Contracts.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\bin\Debug\netstandard2.0\Contracts.pdb
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.csprojAssemblyReference.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.AssemblyInfoInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.AssemblyInfo.cs
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.dll
+D:\Users\kris\Source\Repos\kalendear\KalandearAPI\Contracts\obj\Debug\netstandard2.0\Contracts.pdb
