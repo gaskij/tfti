@@ -11,7 +11,11 @@ namespace TFTI.Contracts
     public class CompleteEvent
     {
         public Event EventDetails { get; set; }
-        public IList<EventAttendees> Attendees { get; set; }
-        public IList<Item> Items { get; set; }
+
+        public IList<User> Guests { get; set; }
+
+        public IList<ClaimedItem> ClaimedItems { get; set; }
+        //public IList<EventAttendees> Attendees { get; set; }
+        //public IList<Item> Items { get; set; }
     }
 }

@@ -67,9 +67,9 @@ namespace Kalandear.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<EventAttendees> CreateEventAttendees([FromBody] EventAttendees eventAttendees)
+        public async Task<EventAttendees> CreateEventAttendees([FromBody] NewEventAttendee newEventAttendees)
         {
-            var eventAttendeeResults = _HostRepository.CreateEventAttendees(eventAttendees).Result;
+            var eventAttendeeResults = _HostRepository.CreateEventAttendees(newEventAttendees).Result;
 
             return eventAttendeeResults;
         }

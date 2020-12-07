@@ -25,7 +25,7 @@ namespace TFTI.Interfaces
         /// </summary>
         /// <param name="eventAttendees"></param>
         /// <returns></returns>
-        Task<EventAttendees> CreateEventAttendees(EventAttendees eventAttendees);
+        Task<EventAttendees> CreateEventAttendees(NewEventAttendee newEventAttendees);
 
         /// <summary>
         /// 

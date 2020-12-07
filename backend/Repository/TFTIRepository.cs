@@ -1,4 +1,5 @@
 ﻿using Kalandear.Data;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TFTI.Contracts;
@@ -63,8 +64,14 @@ namespace TFTI.Repositories
         }
 
         /// <inheritdoc />
-        public async Task<EventAttendees> CreateEventAttendees(EventAttendees eventAttendees)
+        public async Task<EventAttendees> CreateEventAttendees(NewEventAttendee newEventAttendees)
         {
+            EventAttendees eventAttendees = new EventAttendees
+            { 
+                event_id = newEventAttendees.event_id,
+                user_id = newEventAttendees.user_id
+            };
+
             _context.EventAttendees.Add(eventAttendees);
             await _context.SaveChangesAsync();
 
@@ -194,9 +201,12 @@ namespace TFTI.Repositories
 
             completeEvent.EventDetails = _context.Events.Find(eventId);
 
-            completeEvent.Attendees = _context.EventAttendees.Where(x => x.event_id == eventId).ToList();
+            completeEvent.Guests = GetGuestsForEvent(eventId);
 
-            completeEvent.Items = _context.Items.Where(x => x.event_id == eventId).ToList();
+            completeEvent.ClaimedItems = GetClaimedItemsForEvent(eventId);
+                //completeEvent.Attendees = _context.EventAttendees.Where(x => x.event_id == eventId).ToList();
+
+            //completeEvent.Items = _context.Items.Where(x => x.event_id == eventId).ToList();
 
             return completeEvent;
         }
@@ -240,6 +250,43 @@ namespace TFTI.Repositories
         #endregion
 
         #region Private Methods
+        private IList<User> GetGuestsForEvent(int eventId)
+        {
+            IList<EventAttendees> eventAttendees = _context.EventAttendees.Where(x => x.event_id == eventId).ToList();
+
+            IList<User> guests = new List<User>();
+
+            foreach (var atendee in eventAttendees)
+            {
+                guests.Add(_context.Users.Where(x => x.id == atendee.user_id).FirstOrDefault());
+
+            }
+
+            return guests;
+        }
+
+        private IList<ClaimedItem> GetClaimedItemsForEvent(int eventId)
+        {
+            IList<Item> items = _context.Items.Where(x => x.event_id == eventId).ToList();
+
+            IList<ClaimedItem> claimedItems = new List<ClaimedItem>();
+
+            foreach (var item in items)
+            {
+                var temp = _context.Items.Where(x => x.event_id == item.event_id).FirstOrDefault();
+
+                var tempClaimed = new ClaimedItem();
+                tempClaimed.amount = temp.amount;
+                tempClaimed.item_name = temp.item_name;
+                tempClaimed.unit_type = temp.unit_type;
+                User user = _context.Users.Where(x => x.id == temp.user_id).First();
+                tempClaimed.user_name = user.first_name + " " + user.last_name;
+
+                claimedItems.Add(tempClaimed);
+            }
+
+            return claimedItems;
+        }
         #endregion
     }
 }

@@ -10,6 +10,8 @@ namespace TFTI.Contracts
     public class Friend
     {
         [Key]
+        public int friend_id {get;set;}
+
         public int id_1 { get; set; }
 
         public int id_2 { get; set; }

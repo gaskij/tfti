@@ -14,7 +14,6 @@ D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.0\TFTI.
 D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.0\TFTI.Contracts.csproj.CoreCompileInputs.cache
 D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.0\TFTI.Contracts.dll
 D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.0\TFTI.Contracts.pdb
-D:\Users\kris\Source\Repos\tfti\backend\Contracts\obj\Debug\netstandard2.0\TFTI.Contracts.csprojAssemblyReference.cache
 C:\Users\alexi\Dropbox\tfti\backend\Contracts\bin\Debug\netstandard2.0\TFTI.Contracts.deps.json
 C:\Users\alexi\Dropbox\tfti\backend\Contracts\bin\Debug\netstandard2.0\TFTI.Contracts.dll
 C:\Users\alexi\Dropbox\tfti\backend\Contracts\bin\Debug\netstandard2.0\TFTI.Contracts.pdb
