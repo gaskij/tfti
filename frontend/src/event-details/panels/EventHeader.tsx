@@ -18,7 +18,7 @@ const EventHeader = ({ event }: Props): ReactElement => (
     spacing={2}
   >
     <Grid item>
-      <Typography variant="h4">{event.event_id} Name</Typography>
+      <Typography variant="h4">{event.event_title}</Typography>
     </Grid>
     <Grid item style={{flex: 1}}>
       <Typography variant="body1">

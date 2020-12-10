@@ -30,6 +30,15 @@ const mockGuests: User[] = [
   },
   {
     id: 2,
+    first_name: 'Kathy',
+    last_name: 'Howard',
+    email: '123@abc.com',
+    password: 'uhhhhh',
+    phone_number: '555-555-5555',
+    user_summary: 'Summary',
+  },
+  {
+    id: 3,
     first_name: 'Aliza',
     last_name: 'Knight',
     email: '123@abc.com',
@@ -38,7 +47,7 @@ const mockGuests: User[] = [
     user_summary: 'Summary',
   },
   {
-    id: 3,
+    id: 4,
     first_name: 'Alexis',
     last_name: 'Joseph',
     email: '123@abc.com',
@@ -47,7 +56,7 @@ const mockGuests: User[] = [
     user_summary: 'Summary',
   },
   {
-    id: 4,
+    id: 5,
     first_name: 'Jacob',
     last_name: 'Jiang',
     email: '123@abc.com',
@@ -56,7 +65,7 @@ const mockGuests: User[] = [
     user_summary: 'Summary',
   },
   {
-    id: 5,
+    id: 6,
     first_name: 'Kris',
     last_name: 'Whelan',
     email: '123@abc.com',
@@ -106,7 +115,7 @@ const GuestList = ({ hostId, guestList }: Props): ReactElement => {
           <TableBody>
             {mockGuests.filter(guest => guest.id !== hostId).map((guest) => (
               <TableRow key={guest.id}>
-                <TableCell>{guest.id < 3 ? <Check /> : <Clear />}</TableCell>
+                <TableCell>{guest.id <= 3 ? <Check /> : <Clear />}</TableCell>
                 <TableCell>{guest.first_name} {guest.last_name}</TableCell>
               </TableRow>
             ))}

@@ -27,6 +27,13 @@ export interface Event {
   is_private: boolean;
   event_summary: string;
   addtional_links: string;
+  guests?: User[]
+  claimedItems?: {
+    user_name: string;
+    item_name: string;
+    amount: number;
+    unit_type: string;
+  }
 }
 
 export interface EventAttendee {
