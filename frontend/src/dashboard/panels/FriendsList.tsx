@@ -11,8 +11,6 @@ import {
 
 import { User } from '../../types/interfaces';
 
-// NOTES: No information about event in Invite
-
 const mockFriends: User[] = [
   {
     id: 2,
@@ -35,7 +33,7 @@ const mockFriends: User[] = [
   {
     id: 4,
     first_name: 'Jacob',
-    last_name: 'Xiang',
+    last_name: 'Jiang',
     email: '123@abc.com',
     password: 'uhhhhh',
     phone_number: '555-555-5555',
@@ -55,8 +53,8 @@ const mockFriends: User[] = [
 const useStyles = makeStyles((theme) =>
   createStyles({
     avatar: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.getContrastText(theme.palette.primary.main),
+      backgroundColor: theme.palette.secondary.main,
+      color: '#ffffff',
     },
   }),
 );
@@ -79,8 +77,12 @@ const FriendsList = () => {
                   {mockFriends.map((friend) => (
                     <Paper style={{marginBottom: '16px'}} key={friend.id}>
                       <Box p={1}>
-                        <Avatar alt={friend.first_name} src="/broken-image.jpg" className={classes.avatar} />
-                        <Typography variant="body1">{friend.first_name} {friend.last_name}</Typography>
+                        <div style={{display: 'inline-block'}}>
+                          <Avatar alt={friend.first_name} src="/broken-image.jpg" className={classes.avatar} />
+                        </div>
+                        <div style={{display: 'inline-block', paddingLeft: '8px', verticalAlign: "60%"}}>
+                          <Typography variant="body1">{friend.first_name} {friend.last_name}</Typography>
+                        </div>
                       </Box>
                     </Paper>
                   ))}

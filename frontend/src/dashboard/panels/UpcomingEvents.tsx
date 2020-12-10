@@ -6,8 +6,10 @@ import {
   Paper,
   Typography
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import { Event } from '../../types/interfaces';
+import { baseURL } from '../../config';
 
 const mockEvents: Event[] = [
   {
@@ -44,7 +46,7 @@ const mockEvents: Event[] = [
 
 const UpcomingEvents = () => {
     const [{ data, loading, error }] = useAxios<[Event]>({
-      url: `/api/invites`,
+      url: `${baseURL}/events`,
     }, { manual: false, useCache: false });
 
     return (
@@ -55,13 +57,15 @@ const UpcomingEvents = () => {
               ? <Typography variant="body1">There was an error: {JSON.stringify(error)}</Typography>
               : <>
                   {mockEvents.map((event) => (
-                    <Paper elevation={2} style={{marginBottom: '16px'}} key={event.event_id}>
-                      <Box p={1}>
-                        <Typography variant="body1">{event.event_title}</Typography>
-                        <Typography variant="body1">{event.event_date.toLocaleDateString()}</Typography>
-                        <Typography variant="body1">{event.location}</Typography>  
-                      </Box>
-                    </Paper>
+                    <Link to={`/events/${event.event_id}`} key={event.event_id}>
+                      <Paper elevation={2} style={{marginBottom: '16px'}}>
+                        <Box p={1}>
+                          <Typography variant="body1">{event.event_title}</Typography>
+                          <Typography variant="body1">{event.event_date.toLocaleDateString()}</Typography>
+                          <Typography variant="body1">{event.location}</Typography>  
+                        </Box>
+                      </Paper>
+                    </Link>
                   ))}
                 </>
         )

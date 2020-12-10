@@ -35,7 +35,7 @@ const Dashboard = () => {
           justify="center"
           alignItems="stretch"
         >
-          <DashboardCard size={4} title="Friend List">
+          <DashboardCard size={4} title="Friends List">
             <FriendsList />
           </DashboardCard>
           <DashboardCard size={4} title="Upcoming Events">
