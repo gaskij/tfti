@@ -60,6 +60,8 @@ namespace TFTI
                     });
             });
 
+            services.AddCors();
+
             InjectRepository(services);
 
             InjectConnection(services);
@@ -79,7 +81,7 @@ namespace TFTI
 
             app.UseRouting();
 
-            app.UseCors();
+            app.UseCors(options => options.WithOrigins("http://localhost:3000").AllowAnyMethod());
 
             app.UseAuthorization();
 
